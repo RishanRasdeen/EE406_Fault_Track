@@ -1083,7 +1083,7 @@ module ID_EX(clk_i, start_i, se,si,\inst_i[0] , \inst_i[1] , \inst_i[2] , \inst_
   input start_i;
   input se;
   input si;
-  
+
   NOT _215_ (
     .A(start_i),
     .Y(_214_)
