@@ -1327,7 +1327,9 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _395_ (
     .C(clk_i),
     .D(_000_),
-    .Q(\pc_o[0] ),
+    .SE(se),
+    .SI(si),
+    .Q(\pc_o[0]),
     .R(_032_),
     .S(1'h0)
   );
@@ -1335,6 +1337,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _396_ (
     .C(clk_i),
     .D(_011_),
+    .SE(se),
+    .SI(\pc_o[0]),
     .Q(\pc_o[1] ),
     .R(_033_),
     .S(1'h0)
@@ -1343,6 +1347,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _397_ (
     .C(clk_i),
     .D(_022_),
+    .SE(se),
+    .SI(\pc_o[1]),
     .Q(\pc_o[2] ),
     .R(_034_),
     .S(1'h0)
@@ -1351,6 +1357,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _398_ (
     .C(clk_i),
     .D(_025_),
+    .SE(se),
+    .SI(\pc_o[2]),
     .Q(\pc_o[3] ),
     .R(_035_),
     .S(1'h0)
@@ -1359,6 +1367,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _399_ (
     .C(clk_i),
     .D(_026_),
+    .SE(se),
+    .SI(\pc_o[3]),
     .Q(\pc_o[4] ),
     .R(_036_),
     .S(1'h0)
@@ -1367,6 +1377,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _400_ (
     .C(clk_i),
     .D(_027_),
+    .SE(se),
+    .SI(\pc_o[4]),
     .Q(\pc_o[5] ),
     .R(_037_),
     .S(1'h0)
@@ -1375,6 +1387,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _401_ (
     .C(clk_i),
     .D(_028_),
+    .SE(se),
+    .SI(\pc_o[5]),
     .Q(\pc_o[6] ),
     .R(_038_),
     .S(1'h0)
@@ -1383,6 +1397,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _402_ (
     .C(clk_i),
     .D(_029_),
+    .SE(se),
+    .SI(\pc_o[6]),
     .Q(\pc_o[7] ),
     .R(_039_),
     .S(1'h0)
@@ -1391,6 +1407,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _403_ (
     .C(clk_i),
     .D(_030_),
+    .SE(se),
+    .SI(\pc_o[7]),
     .Q(\pc_o[8] ),
     .R(_040_),
     .S(1'h0)
@@ -1399,6 +1417,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _404_ (
     .C(clk_i),
     .D(_031_),
+    .SE(se),
+    .SI(\pc_o[8]),
     .Q(\pc_o[9] ),
     .R(_041_),
     .S(1'h0)
@@ -1407,6 +1427,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _405_ (
     .C(clk_i),
     .D(_001_),
+    .SE(se),
+    .SI(\pc_o[9]),
     .Q(\pc_o[10] ),
     .R(_042_),
     .S(1'h0)
@@ -1415,6 +1437,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _406_ (
     .C(clk_i),
     .D(_002_),
+    .SE(se),
+    .SI(\pc_o[10]),
     .Q(\pc_o[11] ),
     .R(_043_),
     .S(1'h0)
@@ -1423,6 +1447,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _407_ (
     .C(clk_i),
     .D(_003_),
+    .SE(se),
+    .SI(\pc_o[11]),
     .Q(\pc_o[12] ),
     .R(_044_),
     .S(1'h0)
@@ -1431,6 +1457,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _408_ (
     .C(clk_i),
     .D(_004_),
+    .SE(se),
+    .SI(\pc_o[12]),
     .Q(\pc_o[13] ),
     .R(_045_),
     .S(1'h0)
@@ -1439,6 +1467,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _409_ (
     .C(clk_i),
     .D(_005_),
+    .SE(se),
+    .SI(\pc_o[13]),
     .Q(\pc_o[14] ),
     .R(_046_),
     .S(1'h0)
@@ -1447,6 +1477,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _410_ (
     .C(clk_i),
     .D(_006_),
+    .SE(se),
+    .SI(\pc_o[14]),
     .Q(\pc_o[15] ),
     .R(_047_),
     .S(1'h0)
@@ -1455,6 +1487,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _411_ (
     .C(clk_i),
     .D(_007_),
+    .SE(se),
+    .SI(\pc_o[15]),
     .Q(\pc_o[16] ),
     .R(_048_),
     .S(1'h0)
@@ -1463,6 +1497,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _412_ (
     .C(clk_i),
     .D(_008_),
+    .SE(se),
+    .SI(\pc_o[16]),
     .Q(\pc_o[17] ),
     .R(_049_),
     .S(1'h0)
@@ -1471,6 +1507,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _413_ (
     .C(clk_i),
     .D(_009_),
+    .SE(se),
+    .SI(\pc_o[17]),
     .Q(\pc_o[18] ),
     .R(_050_),
     .S(1'h0)
@@ -1479,6 +1517,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _414_ (
     .C(clk_i),
     .D(_010_),
+    .SE(se),
+    .SI(\pc_o[18]),
     .Q(\pc_o[19] ),
     .R(_051_),
     .S(1'h0)
@@ -1487,6 +1527,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _415_ (
     .C(clk_i),
     .D(_012_),
+    .SE(se),
+    .SI(\pc_o[19]),
     .Q(\pc_o[20] ),
     .R(_052_),
     .S(1'h0)
@@ -1495,6 +1537,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _416_ (
     .C(clk_i),
     .D(_013_),
+    .SE(se),
+    .SI(\pc_o[20]),
     .Q(\pc_o[21] ),
     .R(_053_),
     .S(1'h0)
@@ -1503,6 +1547,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _417_ (
     .C(clk_i),
     .D(_014_),
+    .SE(se),
+    .SI(\pc_o[21]),
     .Q(\pc_o[22] ),
     .R(_054_),
     .S(1'h0)
@@ -1511,6 +1557,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _418_ (
     .C(clk_i),
     .D(_015_),
+    .SE(se),
+    .SI(\pc_o[22]),
     .Q(\pc_o[23] ),
     .R(_055_),
     .S(1'h0)
@@ -1519,6 +1567,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _419_ (
     .C(clk_i),
     .D(_016_),
+    .SE(se),
+    .SI(\pc_o[23]),
     .Q(\pc_o[24] ),
     .R(_056_),
     .S(1'h0)
@@ -1527,6 +1577,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _420_ (
     .C(clk_i),
     .D(_017_),
+    .SE(se),
+    .SI(\pc_o[24]),
     .Q(\pc_o[25] ),
     .R(_057_),
     .S(1'h0)
@@ -1535,6 +1587,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _421_ (
     .C(clk_i),
     .D(_018_),
+    .SE(se),
+    .SI(\pc_o[25]),
     .Q(\pc_o[26] ),
     .R(_058_),
     .S(1'h0)
@@ -1543,6 +1597,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _422_ (
     .C(clk_i),
     .D(_019_),
+    .SE(se),
+    .SI(\pc_o[26]),
     .Q(\pc_o[27] ),
     .R(_059_),
     .S(1'h0)
@@ -1551,6 +1607,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _423_ (
     .C(clk_i),
     .D(_020_),
+    .SE(se),
+    .SI(\pc_o[27]),
     .Q(\pc_o[28] ),
     .R(_060_),
     .S(1'h0)
@@ -1559,6 +1617,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _424_ (
     .C(clk_i),
     .D(_021_),
+    .SE(se),
+    .SI(\pc_o[28]),
     .Q(\pc_o[29] ),
     .R(_061_),
     .S(1'h0)
@@ -1567,6 +1627,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _425_ (
     .C(clk_i),
     .D(_023_),
+    .SE(se),
+    .SI(\pc_o[29]),
     .Q(\pc_o[30] ),
     .R(_062_),
     .S(1'h0)
@@ -1575,6 +1637,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _426_ (
     .C(clk_i),
     .D(_024_),
+    .SE(se),
+    .SI(\pc_o[30]),
     .Q(\pc_o[31] ),
     .R(_063_),
     .S(1'h0)
@@ -1583,6 +1647,8 @@ module PC(clk_i, start_i, \pc_i[0] , \pc_i[1] , \pc_i[2] , \pc_i[3] , \pc_i[4] ,
   DFFSR _427_ (
     .C(clk_i),
     .D(flag_next),
+    .SE(se),
+    .SI(\pc_o[31]),
     .Q(flag),
     .R(_064_),
     .S(1'h0)
