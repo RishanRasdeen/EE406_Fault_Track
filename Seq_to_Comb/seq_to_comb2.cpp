@@ -115,23 +115,23 @@ int main()
     extractVerilogNames(inputFileName, inputPorts, outputPorts, wireNames);
 
     // Print extracted names
-    cout << "Input Ports:" << endl;
-    for (const string &inputPort : inputPorts)
-    {
-        cout << "  " << inputPort << endl;
-    }
+    // cout << "Input Ports:" << endl;
+    // for (const string &inputPort : inputPorts)
+    // {
+    //     cout << "  " << inputPort << endl;
+    // }
 
-    cout << "Output Ports:" << endl;
-    for (const string &outputPort : outputPorts)
-    {
-        cout << "  " << outputPort << endl;
-    }
+    // cout << "Output Ports:" << endl;
+    // for (const string &outputPort : outputPorts)
+    // {
+    //     cout << "  " << outputPort << endl;
+    // }
 
-    cout << "Wire Names:" << endl;
-    for (const string &wireName : wireNames)
-    {
-        cout << "  " << wireName << endl;
-    }
+    // cout << "Wire Names:" << endl;
+    // for (const string &wireName : wireNames)
+    // {
+    //     cout << "  " << wireName << endl;
+    // }
 
     vector<string> qOutputVector;
     vector<string> dataVector;
