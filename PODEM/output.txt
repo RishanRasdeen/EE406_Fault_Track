@@ -1,2 +1,0 @@
-INPUT a b cin -1
-OUTPUT cout sum -1
