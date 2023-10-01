@@ -25,7 +25,7 @@ struct Module
 
 int main()
 {
-    ifstream inputFile("Data_comb.v");
+    ifstream inputFile("Hazard_Detect_syn.v");
 
     // Check if the file is open
     if (!inputFile.is_open())
@@ -249,6 +249,17 @@ int main()
         cout << endl;
     }
     cout << "--------------------------------------------" << endl;
+
+    for (const auto &gate : gates)
+    {
+        // cout << "Gate Type: " << gate.type << endl;
+        if (!gate.input2.empty())
+        {
+            cout << "Input 1: " << gate.input1 << "     ";
+            cout << "Input 2: " << gate.input2 << "     ";
+            cout << "Output: " << gate.output << endl;
+        }
+    }
 
     return 0;
 }
