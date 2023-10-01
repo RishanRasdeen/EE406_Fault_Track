@@ -13,12 +13,28 @@ library(demo) {
     pin(Y) { direction: output;
               function: "A'"; }
   }
+
+  cell(AND) {
+    area: 4;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Y) { direction: output;
+             function: "(A*B)"; }
+  }
   cell(NAND) {
     area: 4;
     pin(A) { direction: input; }
     pin(B) { direction: input; }
     pin(Y) { direction: output;
              function: "(A*B)'"; }
+  }
+
+    cell(OR) {
+    area: 4;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Y) { direction: output;
+             function: "(A+B)"; }
   }
   cell(NOR) {
     area: 4;
@@ -27,6 +43,15 @@ library(demo) {
     pin(Y) { direction: output;
              function: "(A+B)'"; }
   }
+
+  cell(XOR) {
+    area: 7;
+    pin(A) { direction: input; }
+    pin(B) { direction: input; }
+    pin(Y) { direction: output;
+             function: "(A^B)"; }
+  }
+  
   cell(DFF) {
     area: 18;
     ff(IQ, IQN) { clocked_on: C;
