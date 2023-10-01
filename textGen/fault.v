@@ -1,12 +1,4 @@
 module EX_Mem (
-MemRead_i, 
-MemRead_o, 
-MemToReg_i, 
-MemToReg_o, 
-MemWrite_i, 
-MemWrite_o, 
-RegWrite_i, 
-RegWrite_o, 
 \ALUResult_i[0], 
 \ALUResult_i[10], 
 \ALUResult_i[11], 
@@ -39,38 +31,9 @@ RegWrite_o,
 \ALUResult_i[7], 
 \ALUResult_i[8], 
 \ALUResult_i[9], 
-\ALUResult_o[0], 
-\ALUResult_o[10], 
-\ALUResult_o[11], 
-\ALUResult_o[12], 
-\ALUResult_o[13], 
-\ALUResult_o[14], 
-\ALUResult_o[15], 
-\ALUResult_o[16], 
-\ALUResult_o[17], 
-\ALUResult_o[18], 
-\ALUResult_o[19], 
-\ALUResult_o[1], 
-\ALUResult_o[20], 
-\ALUResult_o[21], 
-\ALUResult_o[22], 
-\ALUResult_o[23], 
-\ALUResult_o[24], 
-\ALUResult_o[25], 
-\ALUResult_o[26], 
-\ALUResult_o[27], 
-\ALUResult_o[28], 
-\ALUResult_o[29], 
-\ALUResult_o[2], 
-\ALUResult_o[30], 
-\ALUResult_o[31], 
-\ALUResult_o[3], 
-\ALUResult_o[4], 
-\ALUResult_o[5], 
-\ALUResult_o[6], 
-\ALUResult_o[7], 
-\ALUResult_o[8], 
-\ALUResult_o[9], 
+MemRead_i, 
+MemToReg_i, 
+MemWrite_i, 
 \RDData_i[0], 
 \RDData_i[10], 
 \RDData_i[11], 
@@ -103,48 +66,12 @@ RegWrite_o,
 \RDData_i[7], 
 \RDData_i[8], 
 \RDData_i[9], 
-\RDData_o[0], 
-\RDData_o[10], 
-\RDData_o[11], 
-\RDData_o[12], 
-\RDData_o[13], 
-\RDData_o[14], 
-\RDData_o[15], 
-\RDData_o[16], 
-\RDData_o[17], 
-\RDData_o[18], 
-\RDData_o[19], 
-\RDData_o[1], 
-\RDData_o[20], 
-\RDData_o[21], 
-\RDData_o[22], 
-\RDData_o[23], 
-\RDData_o[24], 
-\RDData_o[25], 
-\RDData_o[26], 
-\RDData_o[27], 
-\RDData_o[28], 
-\RDData_o[29], 
-\RDData_o[2], 
-\RDData_o[30], 
-\RDData_o[31], 
-\RDData_o[3], 
-\RDData_o[4], 
-\RDData_o[5], 
-\RDData_o[6], 
-\RDData_o[7], 
-\RDData_o[8], 
-\RDData_o[9], 
 \RDaddr_i[0], 
 \RDaddr_i[1], 
 \RDaddr_i[2], 
 \RDaddr_i[3], 
 \RDaddr_i[4], 
-\RDaddr_o[0], 
-\RDaddr_o[1], 
-\RDaddr_o[2], 
-\RDaddr_o[3], 
-\RDaddr_o[4], 
+RegWrite_i, 
 \VALUResult_i[0], 
 \VALUResult_i[10], 
 \VALUResult_i[11], 
@@ -177,38 +104,7 @@ RegWrite_o,
 \VALUResult_i[7], 
 \VALUResult_i[8], 
 \VALUResult_i[9], 
-\VALUResult_o[0], 
-\VALUResult_o[10], 
-\VALUResult_o[11], 
-\VALUResult_o[12], 
-\VALUResult_o[13], 
-\VALUResult_o[14], 
-\VALUResult_o[15], 
-\VALUResult_o[16], 
-\VALUResult_o[17], 
-\VALUResult_o[18], 
-\VALUResult_o[19], 
-\VALUResult_o[1], 
-\VALUResult_o[20], 
-\VALUResult_o[21], 
-\VALUResult_o[22], 
-\VALUResult_o[23], 
-\VALUResult_o[24], 
-\VALUResult_o[25], 
-\VALUResult_o[26], 
-\VALUResult_o[27], 
-\VALUResult_o[28], 
-\VALUResult_o[29], 
-\VALUResult_o[2], 
-\VALUResult_o[30], 
-\VALUResult_o[31], 
-\VALUResult_o[3], 
-\VALUResult_o[4], 
-\VALUResult_o[5], 
-\VALUResult_o[6], 
-\VALUResult_o[7], 
-\VALUResult_o[8], 
-\VALUResult_o[9], 
+clk_i, 
 \instr_i[0], 
 \instr_i[10], 
 \instr_i[11], 
@@ -241,38 +137,6 @@ RegWrite_o,
 \instr_i[7], 
 \instr_i[8], 
 \instr_i[9], 
-\instr_o[0], 
-\instr_o[10], 
-\instr_o[11], 
-\instr_o[12], 
-\instr_o[13], 
-\instr_o[14], 
-\instr_o[15], 
-\instr_o[16], 
-\instr_o[17], 
-\instr_o[18], 
-\instr_o[19], 
-\instr_o[1], 
-\instr_o[20], 
-\instr_o[21], 
-\instr_o[22], 
-\instr_o[23], 
-\instr_o[24], 
-\instr_o[25], 
-\instr_o[26], 
-\instr_o[27], 
-\instr_o[28], 
-\instr_o[29], 
-\instr_o[2], 
-\instr_o[30], 
-\instr_o[31], 
-\instr_o[3], 
-\instr_o[4], 
-\instr_o[5], 
-\instr_o[6], 
-\instr_o[7], 
-\instr_o[8], 
-\instr_o[9], 
 \pc_i[0], 
 \pc_i[10], 
 \pc_i[11], 
@@ -305,6 +169,146 @@ RegWrite_o,
 \pc_i[7], 
 \pc_i[8], 
 \pc_i[9], 
+start_i, 
+zero_i, 
+f,
+\ALUResult_o[0], 
+\ALUResult_o[10], 
+\ALUResult_o[11], 
+\ALUResult_o[12], 
+\ALUResult_o[13], 
+\ALUResult_o[14], 
+\ALUResult_o[15], 
+\ALUResult_o[16], 
+\ALUResult_o[17], 
+\ALUResult_o[18], 
+\ALUResult_o[19], 
+\ALUResult_o[1], 
+\ALUResult_o[20], 
+\ALUResult_o[21], 
+\ALUResult_o[22], 
+\ALUResult_o[23], 
+\ALUResult_o[24], 
+\ALUResult_o[25], 
+\ALUResult_o[26], 
+\ALUResult_o[27], 
+\ALUResult_o[28], 
+\ALUResult_o[29], 
+\ALUResult_o[2], 
+\ALUResult_o[30], 
+\ALUResult_o[31], 
+\ALUResult_o[3], 
+\ALUResult_o[4], 
+\ALUResult_o[5], 
+\ALUResult_o[6], 
+\ALUResult_o[7], 
+\ALUResult_o[8], 
+\ALUResult_o[9], 
+MemRead_o, 
+MemToReg_o, 
+MemWrite_o, 
+\RDData_o[0], 
+\RDData_o[10], 
+\RDData_o[11], 
+\RDData_o[12], 
+\RDData_o[13], 
+\RDData_o[14], 
+\RDData_o[15], 
+\RDData_o[16], 
+\RDData_o[17], 
+\RDData_o[18], 
+\RDData_o[19], 
+\RDData_o[1], 
+\RDData_o[20], 
+\RDData_o[21], 
+\RDData_o[22], 
+\RDData_o[23], 
+\RDData_o[24], 
+\RDData_o[25], 
+\RDData_o[26], 
+\RDData_o[27], 
+\RDData_o[28], 
+\RDData_o[29], 
+\RDData_o[2], 
+\RDData_o[30], 
+\RDData_o[31], 
+\RDData_o[3], 
+\RDData_o[4], 
+\RDData_o[5], 
+\RDData_o[6], 
+\RDData_o[7], 
+\RDData_o[8], 
+\RDData_o[9], 
+\RDaddr_o[0], 
+\RDaddr_o[1], 
+\RDaddr_o[2], 
+\RDaddr_o[3], 
+\RDaddr_o[4], 
+RegWrite_o, 
+\VALUResult_o[0], 
+\VALUResult_o[10], 
+\VALUResult_o[11], 
+\VALUResult_o[12], 
+\VALUResult_o[13], 
+\VALUResult_o[14], 
+\VALUResult_o[15], 
+\VALUResult_o[16], 
+\VALUResult_o[17], 
+\VALUResult_o[18], 
+\VALUResult_o[19], 
+\VALUResult_o[1], 
+\VALUResult_o[20], 
+\VALUResult_o[21], 
+\VALUResult_o[22], 
+\VALUResult_o[23], 
+\VALUResult_o[24], 
+\VALUResult_o[25], 
+\VALUResult_o[26], 
+\VALUResult_o[27], 
+\VALUResult_o[28], 
+\VALUResult_o[29], 
+\VALUResult_o[2], 
+\VALUResult_o[30], 
+\VALUResult_o[31], 
+\VALUResult_o[3], 
+\VALUResult_o[4], 
+\VALUResult_o[5], 
+\VALUResult_o[6], 
+\VALUResult_o[7], 
+\VALUResult_o[8], 
+\VALUResult_o[9], 
+\instr_o[0], 
+\instr_o[10], 
+\instr_o[11], 
+\instr_o[12], 
+\instr_o[13], 
+\instr_o[14], 
+\instr_o[15], 
+\instr_o[16], 
+\instr_o[17], 
+\instr_o[18], 
+\instr_o[19], 
+\instr_o[1], 
+\instr_o[20], 
+\instr_o[21], 
+\instr_o[22], 
+\instr_o[23], 
+\instr_o[24], 
+\instr_o[25], 
+\instr_o[26], 
+\instr_o[27], 
+\instr_o[28], 
+\instr_o[29], 
+\instr_o[2], 
+\instr_o[30], 
+\instr_o[31], 
+\instr_o[3], 
+\instr_o[4], 
+\instr_o[5], 
+\instr_o[6], 
+\instr_o[7], 
+\instr_o[8], 
+\instr_o[9], 
 \pc_o[0], 
 \pc_o[10], 
 \pc_o[11], 
@@ -337,189 +341,178 @@ RegWrite_o,
 \pc_o[7], 
 \pc_o[8], 
 \pc_o[9], 
-clk_i, 
-start_i, 
-zero_i, 
-zero_o,
+zero_o
 );
-  wire _000_ ;
-  wire _001_ ;
-  wire _002_ ;
-  wire _003_ ;
-  wire _004_ ;
-  wire _005_ ;
-  wire _006_ ;
-  wire _007_ ;
-  wire _008_ ;
-  wire _009_ ;
-  wire _010_ ;
-  wire _011_ ;
-  wire _012_ ;
-  wire _013_ ;
-  wire _014_ ;
-  wire _015_ ;
-  wire _016_ ;
-  wire _017_ ;
-  wire _018_ ;
-  wire _019_ ;
-  wire _020_ ;
-  wire _021_ ;
-  wire _022_ ;
-  wire _023_ ;
-  wire _024_ ;
-  wire _025_ ;
-  wire _026_ ;
-  wire _027_ ;
-  wire _028_ ;
-  wire _029_ ;
-  wire _030_ ;
-  wire _031_ ;
-  wire _032_ ;
-  wire _033_ ;
-  wire _034_ ;
-  wire _035_ ;
-  wire _036_ ;
-  wire _037_ ;
-  wire _038_ ;
-  wire _039_ ;
-  wire _040_ ;
-  wire _041_ ;
-  wire _042_ ;
-  wire _043_ ;
-  wire _044_ ;
-  wire _045_ ;
-  wire _046_ ;
-  wire _047_ ;
-  wire _048_ ;
-  wire _049_ ;
-  wire _050_ ;
-  wire _051_ ;
-  wire _052_ ;
-  wire _053_ ;
-  wire _054_ ;
-  wire _055_ ;
-  wire _056_ ;
-  wire _057_ ;
-  wire _058_ ;
-  wire _059_ ;
-  wire _060_ ;
-  wire _061_ ;
-  wire _062_ ;
-  wire _063_ ;
-  wire _064_ ;
-  wire _065_ ;
-  wire _066_ ;
-  wire _067_ ;
-  wire _068_ ;
-  wire _069_ ;
-  wire _070_ ;
-  wire _071_ ;
-  wire _072_ ;
-  wire _073_ ;
-  wire _074_ ;
-  wire _075_ ;
-  wire _076_ ;
-  wire _077_ ;
-  wire _078_ ;
-  wire _079_ ;
-  wire _080_ ;
-  wire _081_ ;
-  wire _082_ ;
-  wire _083_ ;
-  wire _084_ ;
-  wire _085_ ;
-  wire _086_ ;
-  wire _087_ ;
-  wire _088_ ;
-  wire _089_ ;
-  wire _090_ ;
-  wire _091_ ;
-  wire _092_ ;
-  wire _093_ ;
-  wire _094_ ;
-  wire _095_ ;
-  wire _096_ ;
-  wire _097_ ;
-  wire _098_ ;
-  wire _099_ ;
-  wire _100_ ;
-  wire _101_ ;
-  wire _102_ ;
-  wire _103_ ;
-  wire _104_ ;
-  wire _105_ ;
-  wire _106_ ;
-  wire _107_ ;
-  wire _108_ ;
-  wire _109_ ;
-  wire _110_ ;
-  wire _111_ ;
-  wire _112_ ;
-  wire _113_ ;
-  wire _114_ ;
-  wire _115_ ;
-  wire _116_ ;
-  wire _117_ ;
-  wire _118_ ;
-  wire _119_ ;
-  wire _120_ ;
-  wire _121_ ;
-  wire _122_ ;
-  wire _123_ ;
-  wire _124_ ;
-  wire _125_ ;
-  wire _126_ ;
-  wire _127_ ;
-  wire _128_ ;
-  wire _129_ ;
-  wire _130_ ;
-  wire _131_ ;
-  wire _132_ ;
-  wire _133_ ;
-  wire _134_ ;
-  wire _135_ ;
-  wire _136_ ;
-  wire _137_ ;
-  wire _138_ ;
-  wire _139_ ;
-  wire _140_ ;
-  wire _141_ ;
-  wire _142_ ;
-  wire _143_ ;
-  wire _144_ ;
-  wire _145_ ;
-  wire _146_ ;
-  wire _147_ ;
-  wire _148_ ;
-  wire _149_ ;
-  wire _150_ ;
-  wire _151_ ;
-  wire _152_ ;
-  wire _153_ ;
-  wire _154_ ;
-  wire _155_ ;
-  wire _156_ ;
-  wire _157_ ;
-  wire _158_ ;
-  wire _159_ ;
-  wire _160_ ;
-  wire _161_ ;
-  wire _162_ ;
-  wire _163_ ;
-  wire _164_ ;
-  wire _165_ ;
-  wire _166_ ;
-  wire _167_ ;
-  wire _168_ ;
-  wire _169_ ;
-  input MemRead_i ;
-  input MemRead_o ;
-  input MemToReg_i ;
-  input MemToReg_o ;
-  input MemWrite_i ;
-  input MemWrite_o ;
-  input RegWrite_i ;
-  input RegWrite_o ;
+  wire _000_;
+  wire _001_;
+  wire _002_;
+  wire _003_;
+  wire _004_;
+  wire _005_;
+  wire _006_;
+  wire _007_;
+  wire _008_;
+  wire _009_;
+  wire _010_;
+  wire _011_;
+  wire _012_;
+  wire _013_;
+  wire _014_;
+  wire _015_;
+  wire _016_;
+  wire _017_;
+  wire _018_;
+  wire _019_;
+  wire _020_;
+  wire _021_;
+  wire _022_;
+  wire _023_;
+  wire _024_;
+  wire _025_;
+  wire _026_;
+  wire _027_;
+  wire _028_;
+  wire _029_;
+  wire _030_;
+  wire _031_;
+  wire _032_;
+  wire _033_;
+  wire _034_;
+  wire _035_;
+  wire _036_;
+  wire _037_;
+  wire _038_;
+  wire _039_;
+  wire _040_;
+  wire _041_;
+  wire _042_;
+  wire _043_;
+  wire _044_;
+  wire _045_;
+  wire _046_;
+  wire _047_;
+  wire _048_;
+  wire _049_;
+  wire _050_;
+  wire _051_;
+  wire _052_;
+  wire _053_;
+  wire _054_;
+  wire _055_;
+  wire _056_;
+  wire _057_;
+  wire _058_;
+  wire _059_;
+  wire _060_;
+  wire _061_;
+  wire _062_;
+  wire _063_;
+  wire _064_;
+  wire _065_;
+  wire _066_;
+  wire _067_;
+  wire _068_;
+  wire _069_;
+  wire _070_;
+  wire _071_;
+  wire _072_;
+  wire _073_;
+  wire _074_;
+  wire _075_;
+  wire _076_;
+  wire _077_;
+  wire _078_;
+  wire _079_;
+  wire _080_;
+  wire _081_;
+  wire _082_;
+  wire _083_;
+  wire _084_;
+  wire _085_;
+  wire _086_;
+  wire _087_;
+  wire _088_;
+  wire _089_;
+  wire _090_;
+  wire _091_;
+  wire _092_;
+  wire _093_;
+  wire _094_;
+  wire _095_;
+  wire _096_;
+  wire _097_;
+  wire _098_;
+  wire _099_;
+  wire _100_;
+  wire _101_;
+  wire _102_;
+  wire _103_;
+  wire _104_;
+  wire _105_;
+  wire _106_;
+  wire _107_;
+  wire _108_;
+  wire _109_;
+  wire _110_;
+  wire _111_;
+  wire _112_;
+  wire _113_;
+  wire _114_;
+  wire _115_;
+  wire _116_;
+  wire _117_;
+  wire _118_;
+  wire _119_;
+  wire _120_;
+  wire _121_;
+  wire _122_;
+  wire _123_;
+  wire _124_;
+  wire _125_;
+  wire _126_;
+  wire _127_;
+  wire _128_;
+  wire _129_;
+  wire _130_;
+  wire _131_;
+  wire _132_;
+  wire _133_;
+  wire _134_;
+  wire _135_;
+  wire _136_;
+  wire _137_;
+  wire _138_;
+  wire _139_;
+  wire _140_;
+  wire _141_;
+  wire _142_;
+  wire _143_;
+  wire _144_;
+  wire _145_;
+  wire _146_;
+  wire _147_;
+  wire _148_;
+  wire _149_;
+  wire _150_;
+  wire _151_;
+  wire _152_;
+  wire _153_;
+  wire _154_;
+  wire _155_;
+  wire _156_;
+  wire _157_;
+  wire _158_;
+  wire _159_;
+  wire _160_;
+  wire _161_;
+  wire _162_;
+  wire _163_;
+  wire _164_;
+  wire _165_;
+  wire _166_;
+  wire _167_;
+  wire _168_;
+  wire _169_;
   input \ALUResult_i[0] ;
   input \ALUResult_i[10] ;
   input \ALUResult_i[11] ;
@@ -552,38 +545,9 @@ zero_o,
   input \ALUResult_i[7] ;
   input \ALUResult_i[8] ;
   input \ALUResult_i[9] ;
-  input \ALUResult_o[0] ;
-  input \ALUResult_o[10] ;
-  input \ALUResult_o[11] ;
-  input \ALUResult_o[12] ;
-  input \ALUResult_o[13] ;
-  input \ALUResult_o[14] ;
-  input \ALUResult_o[15] ;
-  input \ALUResult_o[16] ;
-  input \ALUResult_o[17] ;
-  input \ALUResult_o[18] ;
-  input \ALUResult_o[19] ;
-  input \ALUResult_o[1] ;
-  input \ALUResult_o[20] ;
-  input \ALUResult_o[21] ;
-  input \ALUResult_o[22] ;
-  input \ALUResult_o[23] ;
-  input \ALUResult_o[24] ;
-  input \ALUResult_o[25] ;
-  input \ALUResult_o[26] ;
-  input \ALUResult_o[27] ;
-  input \ALUResult_o[28] ;
-  input \ALUResult_o[29] ;
-  input \ALUResult_o[2] ;
-  input \ALUResult_o[30] ;
-  input \ALUResult_o[31] ;
-  input \ALUResult_o[3] ;
-  input \ALUResult_o[4] ;
-  input \ALUResult_o[5] ;
-  input \ALUResult_o[6] ;
-  input \ALUResult_o[7] ;
-  input \ALUResult_o[8] ;
-  input \ALUResult_o[9] ;
+  input MemRead_i ;
+  input MemToReg_i ;
+  input MemWrite_i ;
   input \RDData_i[0] ;
   input \RDData_i[10] ;
   input \RDData_i[11] ;
@@ -616,48 +580,12 @@ zero_o,
   input \RDData_i[7] ;
   input \RDData_i[8] ;
   input \RDData_i[9] ;
-  input \RDData_o[0] ;
-  input \RDData_o[10] ;
-  input \RDData_o[11] ;
-  input \RDData_o[12] ;
-  input \RDData_o[13] ;
-  input \RDData_o[14] ;
-  input \RDData_o[15] ;
-  input \RDData_o[16] ;
-  input \RDData_o[17] ;
-  input \RDData_o[18] ;
-  input \RDData_o[19] ;
-  input \RDData_o[1] ;
-  input \RDData_o[20] ;
-  input \RDData_o[21] ;
-  input \RDData_o[22] ;
-  input \RDData_o[23] ;
-  input \RDData_o[24] ;
-  input \RDData_o[25] ;
-  input \RDData_o[26] ;
-  input \RDData_o[27] ;
-  input \RDData_o[28] ;
-  input \RDData_o[29] ;
-  input \RDData_o[2] ;
-  input \RDData_o[30] ;
-  input \RDData_o[31] ;
-  input \RDData_o[3] ;
-  input \RDData_o[4] ;
-  input \RDData_o[5] ;
-  input \RDData_o[6] ;
-  input \RDData_o[7] ;
-  input \RDData_o[8] ;
-  input \RDData_o[9] ;
   input \RDaddr_i[0] ;
   input \RDaddr_i[1] ;
   input \RDaddr_i[2] ;
   input \RDaddr_i[3] ;
   input \RDaddr_i[4] ;
-  input \RDaddr_o[0] ;
-  input \RDaddr_o[1] ;
-  input \RDaddr_o[2] ;
-  input \RDaddr_o[3] ;
-  input \RDaddr_o[4] ;
+  input RegWrite_i ;
   input \VALUResult_i[0] ;
   input \VALUResult_i[10] ;
   input \VALUResult_i[11] ;
@@ -690,38 +618,7 @@ zero_o,
   input \VALUResult_i[7] ;
   input \VALUResult_i[8] ;
   input \VALUResult_i[9] ;
-  input \VALUResult_o[0] ;
-  input \VALUResult_o[10] ;
-  input \VALUResult_o[11] ;
-  input \VALUResult_o[12] ;
-  input \VALUResult_o[13] ;
-  input \VALUResult_o[14] ;
-  input \VALUResult_o[15] ;
-  input \VALUResult_o[16] ;
-  input \VALUResult_o[17] ;
-  input \VALUResult_o[18] ;
-  input \VALUResult_o[19] ;
-  input \VALUResult_o[1] ;
-  input \VALUResult_o[20] ;
-  input \VALUResult_o[21] ;
-  input \VALUResult_o[22] ;
-  input \VALUResult_o[23] ;
-  input \VALUResult_o[24] ;
-  input \VALUResult_o[25] ;
-  input \VALUResult_o[26] ;
-  input \VALUResult_o[27] ;
-  input \VALUResult_o[28] ;
-  input \VALUResult_o[29] ;
-  input \VALUResult_o[2] ;
-  input \VALUResult_o[30] ;
-  input \VALUResult_o[31] ;
-  input \VALUResult_o[3] ;
-  input \VALUResult_o[4] ;
-  input \VALUResult_o[5] ;
-  input \VALUResult_o[6] ;
-  input \VALUResult_o[7] ;
-  input \VALUResult_o[8] ;
-  input \VALUResult_o[9] ;
+  input clk_i ;
   input \instr_i[0] ;
   input \instr_i[10] ;
   input \instr_i[11] ;
@@ -754,38 +651,6 @@ zero_o,
   input \instr_i[7] ;
   input \instr_i[8] ;
   input \instr_i[9] ;
-  input \instr_o[0] ;
-  input \instr_o[10] ;
-  input \instr_o[11] ;
-  input \instr_o[12] ;
-  input \instr_o[13] ;
-  input \instr_o[14] ;
-  input \instr_o[15] ;
-  input \instr_o[16] ;
-  input \instr_o[17] ;
-  input \instr_o[18] ;
-  input \instr_o[19] ;
-  input \instr_o[1] ;
-  input \instr_o[20] ;
-  input \instr_o[21] ;
-  input \instr_o[22] ;
-  input \instr_o[23] ;
-  input \instr_o[24] ;
-  input \instr_o[25] ;
-  input \instr_o[26] ;
-  input \instr_o[27] ;
-  input \instr_o[28] ;
-  input \instr_o[29] ;
-  input \instr_o[2] ;
-  input \instr_o[30] ;
-  input \instr_o[31] ;
-  input \instr_o[3] ;
-  input \instr_o[4] ;
-  input \instr_o[5] ;
-  input \instr_o[6] ;
-  input \instr_o[7] ;
-  input \instr_o[8] ;
-  input \instr_o[9] ;
   input \pc_i[0] ;
   input \pc_i[10] ;
   input \pc_i[11] ;
@@ -818,42 +683,179 @@ zero_o,
   input \pc_i[7] ;
   input \pc_i[8] ;
   input \pc_i[9] ;
-  input \pc_o[0] ;
-  input \pc_o[10] ;
-  input \pc_o[11] ;
-  input \pc_o[12] ;
-  input \pc_o[13] ;
-  input \pc_o[14] ;
-  input \pc_o[15] ;
-  input \pc_o[16] ;
-  input \pc_o[17] ;
-  input \pc_o[18] ;
-  input \pc_o[19] ;
-  input \pc_o[1] ;
-  input \pc_o[20] ;
-  input \pc_o[21] ;
-  input \pc_o[22] ;
-  input \pc_o[23] ;
-  input \pc_o[24] ;
-  input \pc_o[25] ;
-  input \pc_o[26] ;
-  input \pc_o[27] ;
-  input \pc_o[28] ;
-  input \pc_o[29] ;
-  input \pc_o[2] ;
-  input \pc_o[30] ;
-  input \pc_o[31] ;
-  input \pc_o[3] ;
-  input \pc_o[4] ;
-  input \pc_o[5] ;
-  input \pc_o[6] ;
-  input \pc_o[7] ;
-  input \pc_o[8] ;
-  input \pc_o[9] ;
-  input clk_i ;
   input start_i ;
   input zero_i ;
-  input zero_o ;
+  input f ;
+  output \ALUResult_o[0] ;
+  output \ALUResult_o[10] ;
+  output \ALUResult_o[11] ;
+  output \ALUResult_o[12] ;
+  output \ALUResult_o[13] ;
+  output \ALUResult_o[14] ;
+  output \ALUResult_o[15] ;
+  output \ALUResult_o[16] ;
+  output \ALUResult_o[17] ;
+  output \ALUResult_o[18] ;
+  output \ALUResult_o[19] ;
+  output \ALUResult_o[1] ;
+  output \ALUResult_o[20] ;
+  output \ALUResult_o[21] ;
+  output \ALUResult_o[22] ;
+  output \ALUResult_o[23] ;
+  output \ALUResult_o[24] ;
+  output \ALUResult_o[25] ;
+  output \ALUResult_o[26] ;
+  output \ALUResult_o[27] ;
+  output \ALUResult_o[28] ;
+  output \ALUResult_o[29] ;
+  output \ALUResult_o[2] ;
+  output \ALUResult_o[30] ;
+  output \ALUResult_o[31] ;
+  output \ALUResult_o[3] ;
+  output \ALUResult_o[4] ;
+  output \ALUResult_o[5] ;
+  output \ALUResult_o[6] ;
+  output \ALUResult_o[7] ;
+  output \ALUResult_o[8] ;
+  output \ALUResult_o[9] ;
+  output MemRead_o ;
+  output MemToReg_o ;
+  output MemWrite_o ;
+  output \RDData_o[0] ;
+  output \RDData_o[10] ;
+  output \RDData_o[11] ;
+  output \RDData_o[12] ;
+  output \RDData_o[13] ;
+  output \RDData_o[14] ;
+  output \RDData_o[15] ;
+  output \RDData_o[16] ;
+  output \RDData_o[17] ;
+  output \RDData_o[18] ;
+  output \RDData_o[19] ;
+  output \RDData_o[1] ;
+  output \RDData_o[20] ;
+  output \RDData_o[21] ;
+  output \RDData_o[22] ;
+  output \RDData_o[23] ;
+  output \RDData_o[24] ;
+  output \RDData_o[25] ;
+  output \RDData_o[26] ;
+  output \RDData_o[27] ;
+  output \RDData_o[28] ;
+  output \RDData_o[29] ;
+  output \RDData_o[2] ;
+  output \RDData_o[30] ;
+  output \RDData_o[31] ;
+  output \RDData_o[3] ;
+  output \RDData_o[4] ;
+  output \RDData_o[5] ;
+  output \RDData_o[6] ;
+  output \RDData_o[7] ;
+  output \RDData_o[8] ;
+  output \RDData_o[9] ;
+  output \RDaddr_o[0] ;
+  output \RDaddr_o[1] ;
+  output \RDaddr_o[2] ;
+  output \RDaddr_o[3] ;
+  output \RDaddr_o[4] ;
+  output RegWrite_o ;
+  output \VALUResult_o[0] ;
+  output \VALUResult_o[10] ;
+  output \VALUResult_o[11] ;
+  output \VALUResult_o[12] ;
+  output \VALUResult_o[13] ;
+  output \VALUResult_o[14] ;
+  output \VALUResult_o[15] ;
+  output \VALUResult_o[16] ;
+  output \VALUResult_o[17] ;
+  output \VALUResult_o[18] ;
+  output \VALUResult_o[19] ;
+  output \VALUResult_o[1] ;
+  output \VALUResult_o[20] ;
+  output \VALUResult_o[21] ;
+  output \VALUResult_o[22] ;
+  output \VALUResult_o[23] ;
+  output \VALUResult_o[24] ;
+  output \VALUResult_o[25] ;
+  output \VALUResult_o[26] ;
+  output \VALUResult_o[27] ;
+  output \VALUResult_o[28] ;
+  output \VALUResult_o[29] ;
+  output \VALUResult_o[2] ;
+  output \VALUResult_o[30] ;
+  output \VALUResult_o[31] ;
+  output \VALUResult_o[3] ;
+  output \VALUResult_o[4] ;
+  output \VALUResult_o[5] ;
+  output \VALUResult_o[6] ;
+  output \VALUResult_o[7] ;
+  output \VALUResult_o[8] ;
+  output \VALUResult_o[9] ;
+  output \instr_o[0] ;
+  output \instr_o[10] ;
+  output \instr_o[11] ;
+  output \instr_o[12] ;
+  output \instr_o[13] ;
+  output \instr_o[14] ;
+  output \instr_o[15] ;
+  output \instr_o[16] ;
+  output \instr_o[17] ;
+  output \instr_o[18] ;
+  output \instr_o[19] ;
+  output \instr_o[1] ;
+  output \instr_o[20] ;
+  output \instr_o[21] ;
+  output \instr_o[22] ;
+  output \instr_o[23] ;
+  output \instr_o[24] ;
+  output \instr_o[25] ;
+  output \instr_o[26] ;
+  output \instr_o[27] ;
+  output \instr_o[28] ;
+  output \instr_o[29] ;
+  output \instr_o[2] ;
+  output \instr_o[30] ;
+  output \instr_o[31] ;
+  output \instr_o[3] ;
+  output \instr_o[4] ;
+  output \instr_o[5] ;
+  output \instr_o[6] ;
+  output \instr_o[7] ;
+  output \instr_o[8] ;
+  output \instr_o[9] ;
+  output \pc_o[0] ;
+  output \pc_o[10] ;
+  output \pc_o[11] ;
+  output \pc_o[12] ;
+  output \pc_o[13] ;
+  output \pc_o[14] ;
+  output \pc_o[15] ;
+  output \pc_o[16] ;
+  output \pc_o[17] ;
+  output \pc_o[18] ;
+  output \pc_o[19] ;
+  output \pc_o[1] ;
+  output \pc_o[20] ;
+  output \pc_o[21] ;
+  output \pc_o[22] ;
+  output \pc_o[23] ;
+  output \pc_o[24] ;
+  output \pc_o[25] ;
+  output \pc_o[26] ;
+  output \pc_o[27] ;
+  output \pc_o[28] ;
+  output \pc_o[29] ;
+  output \pc_o[2] ;
+  output \pc_o[30] ;
+  output \pc_o[31] ;
+  output \pc_o[3] ;
+  output \pc_o[4] ;
+  output \pc_o[5] ;
+  output \pc_o[6] ;
+  output \pc_o[7] ;
+  output \pc_o[8] ;
+  output \pc_o[9] ;
+  output zero_o ;
   NOT _170_ (
     .A(start_i),
     .Y(_169_)
