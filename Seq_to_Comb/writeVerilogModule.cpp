@@ -41,11 +41,11 @@ void writeVerilogModule(const string &moduleName, const vector<string> &inputs, 
     }
     for (size_t i = 0; i < inputs.size(); ++i)
     {
-        outputFile << "  input " << inputs[i] << ";" << endl;
+        outputFile << "  input " << inputs[i] << " ;" << endl;
     }
     for (size_t i = 0; i < outputs.size(); ++i)
     {
-        outputFile << "  output " << outputs[i] << ";" << endl;
+        outputFile << "  output " << outputs[i] << " ;" << endl;
     }
 
     // Close input file

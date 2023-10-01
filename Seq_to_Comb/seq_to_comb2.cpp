@@ -21,8 +21,8 @@ struct FlipFlopSignals
 int main()
 {
     // Define input and output file names
-    const string inputFileName = "EX_Mem_syn.v"; // Replace with your input Verilog file name
-    const string outputFileName = "EX_comb.v";   // Replace with the desired output Verilog file name
+    const string inputFileName = "Data_Mem_syn.v"; // Replace with your input Verilog file name
+    const string outputFileName = "Data_comb.v";   // Replace with the desired output Verilog file name
 
     ifstream inputFile(inputFileName);
     ofstream outputFile(outputFileName);
