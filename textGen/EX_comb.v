@@ -851,7 +851,7 @@ zero_o,
   input \pc_o[8];
   input \pc_o[9];
   input clk_i;
-  input start_i;
+  input start_i ;
   input zero_i;
   input zero_o;
   NOT _170_ (
