@@ -1,0 +1,312 @@
+collect signalNumber[] as vectors
+number of elements of vec randomly select some elements(nodes) - Give this nodes to podem algo to gen test patterns
+inject stuck at faults to nodes by modifying verilog code
+simulate the yosys gen tb verilog file with atpg outputs in iverilog
+
+106
+72
+94
+110
+124
+124
+103
+\data1_i[16]
+\data1_i[7]
+\data2_i[15]
+\data2_i[18]
+\data2_i[21]
+\data2_i[5]
+
+
+Gate Information:
+--------------------------------------------
+Gate Type: NOT
+Input: 161 Output: 63
+
+Gate Type: NAND
+Input 1: \data2_i[21] Input 2: 161 Output: 64
+
+Gate Type: NAND
+Input 1: \data1_i[21] Input 2: 63 Output: 0
+
+Gate Type: NAND
+Input 1: 64 Input 2: 0 Output: \data_o[21]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[22] Output: 1
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[22] Output: 2
+
+Gate Type: NAND
+Input 1: 1 Input 2: 2 Output: \data_o[22]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[23] Output: 3
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[23] Output: 4
+
+Gate Type: NAND
+Input 1: 3 Input 2: 4 Output: \data_o[23]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[24] Output: 5
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[24] Output: 6
+
+Gate Type: NAND
+Input 1: 5 Input 2: 6 Output: \data_o[24]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[25] Output: 7
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[25] Output: 8
+
+Gate Type: NAND
+Input 1: 7 Input 2: 8 Output: \data_o[25]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[26] Output: 9
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[26] Output: 10 
+
+Gate Type: NAND
+Input 1: 9 Input 2: 10 Output: \data_o[26]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[27] Output: 11
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[27] Output: 12
+
+Gate Type: NAND
+Input 1: 11 Input 2: 12 Output: \data_o[27]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[28] Output: 13
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[28] Output: 14
+
+Gate Type: NAND
+Input 1: 13 Input 2: 14 Output: \data_o[28]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[29] Output: 15 
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[29] Output: 16
+
+Gate Type: NAND
+Input 1: 15 Input 2: 16 Output: \data_o[29]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[30] Output: 17
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[30] Output: 18
+
+Gate Type: NAND
+Input 1: 17 Input 2: 18 Output: \data_o[30]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[31] Output: 19
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[31] Output: 20
+
+Gate Type: NAND
+Input 1: 19 Input 2: 20 Output: \data_o[31]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[0] Output: 21
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[0] Output: 22
+
+Gate Type: NAND
+Input 1: 21 Input 2: 22 Output: \data_o[0]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[1] Output: 23
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[1] Output: 24
+
+Gate Type: NAND
+Input 1: 23 Input 2: 24 Output: \data_o[1]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[2] Output: 25 
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[2] Output: 26
+
+Gate Type: NAND
+Input 1: 25 Input 2: 26 Output: \data_o[2]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[3] Output: 27
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[3] Output: 28
+
+Gate Type: NAND
+Input 1: 27 Input 2: 28 Output: \data_o[3]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[4] Output: 29
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[4] Output: 30
+
+Gate Type: NAND
+Input 1: 29 Input 2: 30 Output: \data_o[4]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[5] Output: 31
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[5] Output: 32
+
+Gate Type: NAND
+Input 1: 31 Input 2: 32 Output: \data_o[5]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[6] Output: 33
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[6] Output: 34
+
+Gate Type: NAND
+Input 1: 33 Input 2: 34 Output: \data_o[6]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[7] Output: 35
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[7] Output: 36
+
+Gate Type: NAND
+Input 1: 35 Input 2: 36 Output: \data_o[7] 
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[8] Output: 37
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[8] Output: 38
+
+Gate Type: NAND
+Input 1: 37 Input 2: 38 Output: \data_o[8]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[9] Output: 39
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[9] Output: 40
+
+Gate Type: NAND
+Input 1: 39 Input 2: 40 Output: \data_o[9]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[10] Output: 41 
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[10] Output: 42
+
+Gate Type: NAND
+Input 1: 41 Input 2: 42 Output: \data_o[10]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[11] Output: 43
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[11] Output: 44
+
+Gate Type: NAND
+Input 1: 43 Input 2: 44 Output: \data_o[11]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[12] Output: 45
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[12] Output: 46
+
+Gate Type: NAND
+Input 1: 45 Input 2: 46 Output: \data_o[12]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[13] Output: 47
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[13] Output: 48
+
+Gate Type: NAND
+Input 1: 47 Input 2: 48 Output: \data_o[13]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[14] Output: 49
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[14] Output: 50
+
+Gate Type: NAND
+Input 1: 49 Input 2: 50 Output: \data_o[14]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[15] Output: 51
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[15] Output: 52
+
+Gate Type: NAND
+Input 1: 51 Input 2: 52 Output: \data_o[15] 
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[16] Output: 53
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[16] Output: 54
+
+Gate Type: NAND
+Input 1: 53 Input 2: 54 Output: \data_o[16]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[17] Output: 55
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[17] Output: 56
+
+Gate Type: NAND
+Input 1: 55 Input 2: 56 Output: \data_o[17]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[18] Output: 57 
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[18] Output: 58
+
+Gate Type: NAND
+Input 1: 57 Input 2: 58 Output: \data_o[18]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[19] Output: 59
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[19] Output: 60
+
+Gate Type: NAND
+Input 1: 59 Input 2: 60 Output: \data_o[19]
+
+Gate Type: NAND
+Input 1: 161 Input 2: \data2_i[20] Output: 61
+
+Gate Type: NAND
+Input 1: 63 Input 2: \data1_i[20] Output: 62
+
+Gate Type: NAND
+Input 1: 61 Input 2: 62 Output: \data_o[20]
